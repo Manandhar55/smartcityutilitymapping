@@ -1,0 +1,45 @@
+/* About.css */
+
+/* General section padding */
+section {
+    padding: 60px 0;
+  }
+  
+  /* Card Styles */
+  .card-style {
+    border: none;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+  }
+  
+  .card-style:hover {
+    transform: translateY(-5px);
+  }
+  
+  /* Card Image Styles */
+  .card-img-top {
+    max-width: 100%;
+    height: auto;
+  }
+  
+  /* Tools Image Section */
+  .tools-image img {
+    max-width: 80%;
+    margin-top: 20px;
+  }
+  
+  /* Card Title */
+  .card-title {
+    font-weight: 700;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 767px) {
+    .card-style {
+      margin-bottom: 20px;
+    }
+    .tools-image img {
+      max-width: 100%;
+    }
+  }
+  

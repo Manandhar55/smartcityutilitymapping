@@ -1,0 +1,92 @@
+/* Home.css */
+
+/* Ensuring uniform size, centering, and rounded corners for component images */
+.component-image {
+  height: 250px;
+  object-fit: cover;  /* Make sure the image covers the area without distortion */
+  border-radius: 15px;  /* Round the corners of the image */
+  margin: 0 auto;  /* Center the image */
+  display: block;  /* Ensure block-level display for centering */
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Image shadow */
+  transition: transform 0.3s ease-in-out; /* Smooth hover effect */
+}
+
+/* Hover Effect on Component Images */
+.component-image:hover {
+  transform: scale(1.05); /* Slight zoom effect */
+}
+
+/* Introduction Section Image Styling */
+.introduction img {
+  max-height: 600px; /* Set a maximum height */
+  object-fit: cover; /* Ensure the image covers the area without distortion */
+  border-radius: 15px; /* Rounded corners */
+}
+
+/* Centralize and add padding for Smart City Components */
+.smart-city-components {
+  background-color: #f8f9fa;  /* Light gray background */
+  padding: 30px 0;  /* Vertical padding */
+}
+
+/* For smart city components layout */
+.smart-city-components .col-md-4 {
+  margin-bottom: 30px;  /* Space between columns */
+}
+
+/* Hover Effect on Links and Buttons */
+.hover-effect:hover {
+  transform: scale(1.05);  /* Slight zoom effect */
+  transition: transform 0.3s ease-in-out;
+}
+
+/* Styling Buttons */
+.btn-primary {
+  font-weight: bold;
+  padding: 12px 30px;
+  transition: background-color 0.3s, transform 0.3s ease;
+}
+
+.btn-primary:hover {
+  background-color: #007bff;  /* Slight color change on hover */
+  transform: translateY(-2px);  /* Lift effect */
+}
+
+/* Interactive Map Section */
+.interactive-map .leaflet-container {
+  border-radius: 8px;  /* Rounded corners for the map */
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);  /* Map shadow */
+  transition: transform 0.3s ease;  /* Smooth transition on hover */
+}
+
+.interactive-map .leaflet-container:hover {
+  transform: scale(1.02);  /* Slight zoom effect when hovering over the map */
+}
+
+/* Ensuring the map has a minimum height */
+.interactive-map {
+  min-height: 400px;  /* Minimum height for the map */
+}
+
+/* Map Container Styling */
+.map-container {
+  max-width: 100%;  /* Ensure full width */
+  margin-top: 30px;
+  border-radius: 10px;  /* Rounded corners */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);  /* Shadow effect */
+}
+
+/* Responsive Design */
+@media (max-width: 767px) {
+  .introduction .col-md-6 {
+    margin-bottom: 30px;  /* Space between image and text */
+  }
+
+  .card {
+    margin-bottom: 20px;  /* Space between cards */
+  }
+
+  .map-container {
+    margin-bottom: 30px;  /* Space for the map on smaller screens */
+  }
+}

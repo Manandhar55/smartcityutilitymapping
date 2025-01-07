@@ -1,0 +1,115 @@
+/* Navbar styles */
+.navbar {
+  background-color: #4a90e2 !important; /* Primary color */
+  border-bottom: 2px solid #00aaff; /* Bottom border for more definition */
+  border-radius: 15px; /* Rounded corners for the navbar */
+  padding: 10px 20px; /* Added some padding to make it look more spacious */
+}
+
+.navbar-nav .nav-link {
+  font-size: 1.1rem; /* Slightly bigger text */
+  font-weight: 600;
+  color: white !important;
+  padding-left: 10px;  /* Reduce horizontal padding */
+  padding-right: 10px; /* Reduce horizontal padding */
+}
+
+.navbar-nav .nav-link:hover,
+.navbar-nav .nav-link:focus {
+  color: #00aaff !important; /* Hover effect with a nice color */
+  text-decoration: underline;
+}
+
+.navbar-toggler-icon {
+  background-color: #00aaff;
+}
+
+.navbar-logo {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%; /* Rounded corners for the logo image */
+}
+
+.logo-text {
+  display: inline-block;
+  text-align: left;
+  margin-left: 10px;
+}
+
+.line-1 {
+  font-size: 1.5rem;
+  font-weight: bold;
+  display: block;
+}
+
+.line-2 {
+  font-size: 1.1rem;
+  font-weight: normal;
+  color: #f8f9fa; /* Lighter color for the second line */
+}
+
+/* Navbar items */
+.navbar .dropdown-menu {
+  background-color: #1e2a3a;
+  border-radius: 10px; /* Rounded corners for the dropdown menu */
+}
+
+.navbar .dropdown-item {
+  color: #ffffff;
+}
+
+.navbar .dropdown-item:hover,
+.navbar .dropdown-item:focus {
+  background-color: #00aaff;
+  color: white;
+  border-radius: 10px; /* Rounded corners for dropdown items on hover */
+}
+
+/* Reduce gap between nav items */
+.navbar-nav .nav-item {
+  margin-left: 10px;  /* Reduce gap between items */
+  margin-right: 10px; /* Reduce gap between items */
+}
+
+/* Search bar styling */
+.navbar form {
+  display: flex;
+  align-items: center;
+}
+
+.navbar input[type="search"] {
+  width: 200px;
+  border-radius: 20px; /* Rounded corners for the search input */
+  padding-left: 15px;
+  padding-right: 10px;
+  border: 2px solid #ffffff; /* White border to match navbar */
+}
+
+.navbar button[type="submit"] {
+  border-radius: 20px; /* Rounded corners for the search button */
+  background-color: #00aaff;
+  border: none;
+  padding: 5px 15px;
+}
+
+.navbar button[type="submit"]:hover {
+  background-color: #0088cc;
+  cursor: pointer;
+}
+
+/* Gradient background */
+.bg-gradient {
+  background: linear-gradient(135deg, #4a90e2, #00aaff);
+}
+
+/* Responsive Navbar */
+@media (max-width: 992px) {
+  .navbar-collapse {
+    background-color: #333;
+  }
+
+  .navbar-nav .nav-item {
+    margin-left: 0;
+    margin-right: 0;
+  }
+}

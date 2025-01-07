@@ -1,0 +1,57 @@
+/* Add gradient text for the title */
+.text-gradient {
+    background: linear-gradient(90deg, #007bff, #6610f2);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  
+  /* Enhanced dropdown style */
+  .layer-select {
+    border-radius: 5px;
+    border: 2px solid #007bff;
+    transition: box-shadow 0.3s ease-in-out;
+  }
+  
+  .layer-select:hover,
+  .layer-select:focus {
+    box-shadow: 0px 0px 10px rgba(0, 123, 255, 0.6);
+  }
+  
+  /* Map wrapper with hover effect */
+  .map-wrapper {
+    overflow: hidden;
+    position: relative;
+  }
+  
+  .map-wrapper:hover {
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5);
+    transition: box-shadow 0.5s ease-in-out;
+  }
+  
+  /* Overlay hover text */
+  .overlay-hover-text {
+    display: none;
+    opacity: 0;
+  }
+  
+  .map-wrapper:hover .overlay-hover-text {
+    display: block;
+    opacity: 1;
+    animation: fadeIn 0.5s ease-in-out;
+  }
+  
+  /* Fade-in animation */
+  @keyframes fadeIn {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  
+  /* Text alignment and utility */
+  .text-justify {
+    text-align: justify;
+  }
+  

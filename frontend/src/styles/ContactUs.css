@@ -1,0 +1,122 @@
+/* Custom Styles for Contact Us Page */
+
+/* Background color gradient for container */
+.contact-us-container {
+    background-color: #f8f9fa; /* Neutral light background */
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    color: #343a40; /* Dark text color for better readability */
+  }
+  
+  /* Title - Larger text with white color */
+  h2 {
+    font-size: 2.5rem;
+    color: #343a40; /* Dark color for better readability */
+    font-weight: 600;
+    margin-bottom: 20px;
+  }
+  
+  /* Team Description Section */
+  .team-description {
+    background-color: #ffffff; /* White background for the description */
+    padding: 25px;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  }
+  
+  .team-description h4 {
+    font-size: 1.8rem;
+    color: #007bff; /* Primary blue color */
+    font-weight: 600;
+    margin-bottom: 15px;
+  }
+  
+  .team-description p {
+    color: #343a40; /* Black text for better readability */
+    font-size: 1rem;
+    line-height: 1.6;
+  }
+  
+  /* Cards for Team Members */
+  .card {
+    border: none;
+    border-radius: 12px;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease;
+    background-color: #f8f9fa; /* Light background for the cards */
+  }
+  
+  .card:hover {
+    transform: translateY(-10px); /* Hover effect */
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2); /* Stronger shadow on hover */
+  }
+  
+  /* Image of the Team Members */
+  .team-member-img {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border: 5px solid #007bff; /* Border around the image */
+    transition: transform 0.3s ease;
+  }
+  
+  .team-member-img:hover {
+    transform: scale(1.1); /* Slight zoom on hover */
+  }
+  
+  /* Card text */
+  .card-title {
+    font-size: 1.3rem;
+    font-weight: 500;
+  }
+  
+  .card-text {
+    font-size: 1rem;
+    color: #6c757d; /* Bootstrap's secondary color */
+  }
+  
+  /* Location Section */
+  .map {
+    margin-top: 30px;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  }
+  
+  .map iframe {
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Horizontal line with primary color */
+  hr.border-primary {
+    border-color: #007bff !important;
+    border-width: 2px;
+    width: 80%;
+    margin: 30px auto;
+  }
+  
+  /* Responsive Design for smaller screens */
+  @media (max-width: 767px) {
+    .contact-us-container {
+      padding: 20px;
+    }
+  
+    .team-description {
+      padding: 20px;
+    }
+  
+    .card {
+      margin-bottom: 20px;
+    }
+  
+    h2 {
+      font-size: 2.2rem;
+    }
+  
+    .team-description h4 {
+      font-size: 1.5rem;
+    }
+  }
+  
